@@ -36,9 +36,9 @@ namespace UI
 
     private void Init()
     {
-        soundEffectStateTMP.text = Utility.IsSfxEnable() ? "ON" : "OFF";
+        soundEffectStateTMP.text = Prefs.IsSfxEnable() ? "ON" : "OFF";
 
-        if (Utility.IsMusicEnable())
+        if (Prefs.IsMusicEnable())
         {
             musicStateTMP.text = "ON";
             MusicManager.instance.FadeIn(3f);

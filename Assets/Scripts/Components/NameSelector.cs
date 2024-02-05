@@ -50,7 +50,7 @@ namespace Components
         {
             var bridgeName = BridgeDataManager.Instance.GetPlayerName();
             if (bridgeName != "")
-                Utility.SetPlayerName(bridgeName);
+                Prefs.SetPlayerName(bridgeName);
         }
 
         private void SubscribeListeners()
@@ -74,7 +74,7 @@ namespace Components
 
         private void SetNameOnUI()
         {
-            var playerName = Utility.GetPlayerName();
+            var playerName = Prefs.GetPlayerName();
             nameField.text = playerName;
             previewNameField.text = playerName;
         }
@@ -124,14 +124,14 @@ namespace Components
         {
             DisableKeyboard();
             if (IsNameTheSame()) return;
-            Utility.SetPlayerName(nameField.text);
+            Prefs.SetPlayerName(nameField.text);
             previewNameField.text = nameField.text;
             onPlayerNameChanged?.Invoke(nameField.text, true);
         }
 
         private bool IsNameTheSame()
         {
-            var currentName = Utility.GetPlayerName();
+            var currentName = Prefs.GetPlayerName();
             if (currentName != nameField.text) return false;
             onPlayerNameChanged?.Invoke("", false);
             return true;

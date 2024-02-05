@@ -35,7 +35,7 @@ namespace Managers
 
             defaultVolume = audioSource.volume;
 
-            isEnabled = Utility.IsMusicEnable();
+            isEnabled = Prefs.IsMusicEnable();
             if (isEnabled) FadeIn(fadeInDuration);
         }
 
@@ -77,7 +77,7 @@ namespace Managers
             }
         
             isEnabled = value;
-            Utility.SetMusicActive(value);
+            Prefs.SetMusicActive(value);
         }
     }
 }

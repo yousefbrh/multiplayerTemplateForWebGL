@@ -23,7 +23,7 @@ namespace Managers
 
         private void Start()
         {
-            UIManager.Instance.AddCoinWithoutEffect(Utility.GetPoints());
+            UIManager.Instance.AddCoinWithoutEffect(Prefs.GetPoints());
         }
 
         public void AddGemWithoutEffect(int amount)

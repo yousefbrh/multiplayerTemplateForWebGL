@@ -81,7 +81,7 @@ namespace Managers
         {
             if (isActive)
             {
-                var playerName = Utility.GetPlayerName();
+                var playerName = Prefs.GetPlayerName();
                 if (playerName != string.Empty)
                 {
                     await UpdatePlayerNameAsync(playerName);

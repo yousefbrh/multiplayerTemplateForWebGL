@@ -58,7 +58,7 @@ namespace Network.Client
         {
             _userData = new UserData
             {
-                userName = Utility.GetPlayerName("Missing Name"),
+                userName = Prefs.GetPlayerName("Missing Name"),
                 userAuthID = AuthenticationService.Instance.PlayerId,
                 pointValue = PlayerPrefs.GetInt("Point"),
                 skinIndex = PlayerPrefs.GetInt("CurrentSkinIndex", 0)

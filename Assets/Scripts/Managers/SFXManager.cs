@@ -29,7 +29,7 @@ namespace Managers
                 DontDestroyOnLoad(gameObject);
                 instance = this;
             }
-            isEnabled = Utility.IsSfxEnable();
+            isEnabled = Prefs.IsSfxEnable();
         }
 
         public void Play(int index)
@@ -45,7 +45,7 @@ namespace Managers
         public void SetActive(bool value)
         {
             isEnabled = value;
-            Utility.SetSfxActive(value);
+            Prefs.SetSfxActive(value);
         }
     }
 }

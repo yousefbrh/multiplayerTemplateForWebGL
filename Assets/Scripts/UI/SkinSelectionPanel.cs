@@ -28,10 +28,10 @@ public class SkinSelectionPanel : Panel
 
     private void Start()
     {
-        var isFirstShown = Utility.IsSkinPanelShown();
+        var isFirstShown = Prefs.IsSkinPanelShown();
         if (isFirstShown) return;
         Show();
-        Utility.SetSkinPanelShown(true);
+        Prefs.SetSkinPanelShown(true);
     }
 
     public override void Show()
@@ -42,7 +42,7 @@ public class SkinSelectionPanel : Panel
 
     private void ActiveSelected()
     {
-        currentSelectedSkinIndex = Utility.GetSkinIndex();
+        currentSelectedSkinIndex = Prefs.GetSkinIndex();
         var targetButton = buttons[currentSelectedSkinIndex];
         targetButton.SelectVisually();
     }
@@ -66,7 +66,7 @@ public class SkinSelectionPanel : Panel
     public void Selected()
     {
         Hide();
-        Utility.SetSkinIndex(currentSelectedSkinIndex);
+        Prefs.SetSkinIndex(currentSelectedSkinIndex);
     }
 
 

@@ -61,7 +61,7 @@ namespace Managers
                 var lobbies = await Lobbies.Instance.QueryLobbiesAsync(options);
                 if (lobbies.Results.Count == 0)
                 {
-                    await Utility.InitCreateServerButton(callback, createServerURL);
+                    await Websocket.InitCreateServerButton(callback, createServerURL);
                 }
                 else
                 {
@@ -83,7 +83,7 @@ namespace Managers
                         _currentLobby = lobby;
                         return;
                     }
-                    await Utility.InitCreateServerButton(callback, createServerURL);
+                    await Websocket.InitCreateServerButton(callback, createServerURL);
                 }
             }
             catch (LobbyServiceException e)

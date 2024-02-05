@@ -64,7 +64,7 @@ namespace Managers
 
         private void InitButtons()
         {
-            var hasName = Utility.HasName();
+            var hasName = Prefs.HasName();
             namePreviewGameObject.SetActive(hasName);
             nameInputFieldGameObject.SetActive(!hasName);
             setNameButton.gameObject.SetActive(!hasName);
