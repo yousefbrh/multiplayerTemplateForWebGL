@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: e594418af44ee834781a9485cf7b9d09
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: button_yellow_glow_slice_02
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 4
+  maxTextureSize: 257
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 71, y: 71, z: 71, w: 71}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: 51
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: button_yellow_glow_slice_02
+      rect:
+        serializedVersion: 2
+        x: 0.076120496
+        y: 1.0761205
+        width: 255.84775
+        height: 255.84776
+      alignment: 9
+      pivot: {x: 0.50195426, y: 0.4980457}
+      border: {x: 70.92388, y: 69.92388, z: 69.92387, w: 70.92388}
+      outline:
+      - - {x: -122, y: -97}
+        - {x: -128, y: -75}
+        - {x: -128, y: 75}
+        - {x: -121, y: 97}
+        - {x: -113, y: 107.00001}
+        - {x: -103, y: 116}
+        - {x: -97, y: 120.00001}
+        - {x: -84, y: 126}
+        - {x: -68, y: 128}
+        - {x: 71, y: 128}
+        - {x: 90, y: 125}
+        - {x: 108.00001, y: 115}
+        - {x: 121.00001, y: 97}
+        - {x: 126, y: 84}
+        - {x: 128, y: 68}
+        - {x: 128, y: -75}
+        - {x: 122, y: -98}
+        - {x: 108.00001, y: -115}
+        - {x: 84, y: -127}
+        - {x: 69, y: -128}
+        - {x: -68, y: -128}
+        - {x: -90, y: -125}
+        - {x: -108, y: -114}
+      physicsShape:
+      - - {x: 110, y: -79}
+        - {x: 113, y: -72}
+        - {x: 113, y: 80}
+        - {x: 95, y: 103.99999}
+        - {x: 77, y: 113}
+        - {x: -81, y: 113}
+        - {x: -107.99999, y: 91.99999}
+        - {x: -113, y: 67}
+        - {x: -113, y: -73}
+        - {x: -105.99999, y: -90}
+        - {x: -90, y: -105.99999}
+        - {x: -78.99999, y: -110}
+        - {x: -70, y: -113}
+        - {x: 68, y: -113}
+        - {x: 79, y: -110}
+        - {x: 90, y: -105.99999}
+        - {x: 105.99999, y: -91}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439272b8aee642b399ee0d797a6421ae
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      button_yellow_glow_slice_02: 21300000
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

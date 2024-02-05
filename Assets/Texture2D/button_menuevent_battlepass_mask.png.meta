@@ -1,0 +1,244 @@
+fileFormatVersion: 2
+guid: 4b410b3af260edd45ae55a9b56994e5b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: button_menuevent_battlepass_mask
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 4
+  maxTextureSize: 400
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: 51
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: button_menuevent_battlepass_mask
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 400
+        height: 362.97324
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5027919}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -199, y: -156.48662}
+        - {x: -200, y: -154.48662}
+        - {x: -200, y: 92.51338}
+        - {x: -199, y: 94.51338}
+        - {x: -197, y: 99.51338}
+        - {x: -192, y: 105.513374}
+        - {x: -186, y: 111.51338}
+        - {x: -180, y: 116.51338}
+        - {x: -170, y: 120.51339}
+        - {x: -166, y: 121.51339}
+        - {x: -76, y: 121.51339}
+        - {x: -76, y: 133.51338}
+        - {x: -74, y: 138.51338}
+        - {x: -71, y: 142.51338}
+        - {x: -66, y: 146.51338}
+        - {x: -58, y: 151.51338}
+        - {x: -48, y: 157.51338}
+        - {x: -20, y: 174.51338}
+        - {x: -7, y: 181.51338}
+        - {x: 7, y: 181.51338}
+        - {x: 12, y: 179.51338}
+        - {x: 57, y: 152.51338}
+        - {x: 65, y: 147.51338}
+        - {x: 67, y: 145.51338}
+        - {x: 74, y: 139.51338}
+        - {x: 77, y: 132.51338}
+        - {x: 77, y: 121.51339}
+        - {x: 166, y: 121.51339}
+        - {x: 170, y: 120.51339}
+        - {x: 180, y: 116.51338}
+        - {x: 186, y: 111.51338}
+        - {x: 192, y: 105.513374}
+        - {x: 197, y: 99.51338}
+        - {x: 199, y: 94.51338}
+        - {x: 200, y: 92.51338}
+        - {x: 200, y: -154.48662}
+        - {x: 199, y: -156.48662}
+        - {x: 197, y: -161.48662}
+        - {x: 192, y: -167.48662}
+        - {x: 186, y: -173.48662}
+        - {x: 180, y: -178.48662}
+        - {x: 175, y: -180.48662}
+        - {x: 173, y: -181.48662}
+        - {x: -173, y: -181.48662}
+        - {x: -175, y: -180.48662}
+        - {x: -180, y: -178.48662}
+        - {x: -186, y: -173.48662}
+        - {x: -192, y: -167.48662}
+        - {x: -197, y: -161.48662}
+      physicsShape:
+      - - {x: 200, y: -151.48662}
+        - {x: 200, y: 91.51338}
+        - {x: 195.99998, y: 103.51338}
+        - {x: 170.99998, y: 121.513374}
+        - {x: 76, y: 121.513374}
+        - {x: 76, y: 135.51338}
+        - {x: 68, y: 145.51338}
+        - {x: 7, y: 181.51338}
+        - {x: -9.999999, y: 181.51338}
+        - {x: -75, y: 139.51338}
+        - {x: -77, y: 122.513374}
+        - {x: -167, y: 121.513374}
+        - {x: -183, y: 114.51338}
+        - {x: -196.99998, y: 99.513374}
+        - {x: -200, y: 89.51338}
+        - {x: -200, y: -155.48662}
+        - {x: -194, y: -164.48662}
+        - {x: -183, y: -176.48662}
+        - {x: -171.99998, y: -181.48662}
+        - {x: 171.99998, y: -181.48662}
+        - {x: 183, y: -176.48662}
+        - {x: 196.99998, y: -161.48662}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f1acf5129b40e7bd9e1d58c3e69747
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      button_menuevent_battlepass_mask: 21300000
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
