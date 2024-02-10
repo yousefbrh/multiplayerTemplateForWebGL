@@ -27,7 +27,6 @@ namespace Network.Leaderboard
             if (!Instance)
             {
                 Instance = this;
-                DontDestroyOnLoad(gameObject);
             }
             else
             {

@@ -1,7 +1,7 @@
 namespace Misc
 {
-    public abstract class TokenExchangeResponse
+    public class TokenExchangeResponse
     {
-        public string AccessToken;
+        public string accessToken;
     }
 }

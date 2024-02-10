@@ -38,7 +38,7 @@ namespace Components
 
         private bool IsServer()
         {
-            return SystemInfo.graphicsDeviceType != UnityEngine.Rendering.GraphicsDeviceType.Null;
+            return SystemInfo.graphicsDeviceType == UnityEngine.Rendering.GraphicsDeviceType.Null;
         }
 
         private void SetInstance()

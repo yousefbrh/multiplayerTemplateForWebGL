@@ -195,7 +195,7 @@ namespace Managers
                     if (lobbies.Results.Count == 0)
                     {
                         await UniTask.Delay(1000);
-                        Debug.Log("Attempt");
+                            Debug.Log("Attempt");
                         continue;
                     }
                     callback?.Invoke(true);

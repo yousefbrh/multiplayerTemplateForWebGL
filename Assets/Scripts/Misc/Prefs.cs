@@ -77,7 +77,7 @@ namespace Misc
         
         public static void SetSkinIndex(int value)
         {
-            PlayerPrefs.GetInt(SkinIndexKey, value);
+            PlayerPrefs.SetInt(SkinIndexKey, value);
         }
     }
 }

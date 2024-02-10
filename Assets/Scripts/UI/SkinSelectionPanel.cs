@@ -21,7 +21,6 @@ public class SkinSelectionPanel : Panel
         }
         else
         {
-            DontDestroyOnLoad(gameObject);
             Instance = this;
         }
     }

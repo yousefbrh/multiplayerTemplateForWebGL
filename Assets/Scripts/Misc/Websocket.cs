@@ -15,13 +15,22 @@ namespace Misc
         {
             {
                 await Post(url,
-                    (unityWebRequest) => { },
+                    (unityWebRequest) =>
+                    {
+                        unityWebRequest.SetRequestHeader("keyId", "2f217d4c-c87d-4a67-ad28-fdfb27d14912");
+                        unityWebRequest.SetRequestHeader("keySecret", "YzoG2M57BcL53QbLkHg9r-rv7g26UWVk");
+                        unityWebRequest.SetRequestHeader("projectId", "6f0cda60-b504-4ba5-b315-6614687db17d");
+                        unityWebRequest.SetRequestHeader("environmentId", "ff22f140-ed50-4e70-a7a1-9012898c751c");
+                        unityWebRequest.SetRequestHeader("fleetId", "dfef6f52-a5be-45c4-875d-083f5e7be9f9");
+                        // unityWebRequest.SetRequestHeader("buildConfigurationId", "1253762");
+                        // unityWebRequest.SetRequestHeader("regionId", "e8854343-ae07-4c85-adeb-f0a1edc407b2");
+                    },
                     "",
                     (string error) => { Debug.Log("Error: " + error); },
                     (string json) =>
                     {
+                        Debug.Log(json);
                         _token = JsonUtility.FromJson<TokenExchangeResponse>(json);
-                        Debug.Log(_token.AccessToken);
                     });
             }
         }
@@ -95,7 +104,17 @@ namespace Misc
         {
             var allocationId = "";
             await Post(url,
-                (UnityWebRequest unityWebRequest) => { unityWebRequest.SetRequestHeader("Authorization", "Bearer " + _token.AccessToken); }, ""
+                (UnityWebRequest unityWebRequest) =>
+                {
+                    unityWebRequest.SetRequestHeader("Authorization", "Bearer " + _token.accessToken);
+                    unityWebRequest.SetRequestHeader("keyId", "2f217d4c-c87d-4a67-ad28-fdfb27d14912");
+                    unityWebRequest.SetRequestHeader("keySecret", "YzoG2M57BcL53QbLkHg9r-rv7g26UWVk");
+                    unityWebRequest.SetRequestHeader("projectId", "6f0cda60-b504-4ba5-b315-6614687db17d");
+                    unityWebRequest.SetRequestHeader("environmentId", "ff22f140-ed50-4e70-a7a1-9012898c751c");
+                    unityWebRequest.SetRequestHeader("fleetId", "dfef6f52-a5be-45c4-875d-083f5e7be9f9");
+                    unityWebRequest.SetRequestHeader("buildConfigurationId", "1253762");
+                    unityWebRequest.SetRequestHeader("regionId", "e8854343-ae07-4c85-adeb-f0a1edc407b2");
+                }, ""
                 ,
                 (string error) =>
                 {
@@ -106,7 +125,6 @@ namespace Misc
                 {
                     allocationId = json;
                     Debug.Log(allocationId);
-                    //      Debug.Log("Success: " + allocationId);
                 }
             );
             await UniTask.Delay(1000);
