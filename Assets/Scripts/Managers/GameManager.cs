@@ -3,9 +3,11 @@ using System.Threading.Tasks;
 using Components;
 using Misc;
 using Network.Leaderboard;
+using Unity.Netcode;
 using Unity.Services.Authentication;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 namespace Managers
 {
@@ -64,6 +66,7 @@ namespace Managers
 
         private void SubscribeListeners()
         {
+            
         }
 
         public async void PlayerNameChanged(string value)
@@ -130,6 +133,19 @@ namespace Managers
             Time.timeScale = 1;
             SetGameState(true);
             OnGameResume?.Invoke();
+        }
+
+        public void SetSceneActionSettings(bool isSet)
+        {
+            if (isSet)
+                NetworkManager.Singleton.SceneManager.OnLoadComplete += SceneManagerOnOnLoadComplete;
+            else
+                NetworkManager.Singleton.SceneManager.OnLoadComplete -= SceneManagerOnOnLoadComplete;
+        }
+        
+        private void SceneManagerOnOnLoadComplete(ulong clientId, string sceneName, LoadSceneMode loadSceneMode)
+        {
+            UIManager.Instance.ShowEntryPanel(false);
         }
     }
 }

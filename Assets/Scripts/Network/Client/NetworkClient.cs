@@ -37,6 +37,7 @@ namespace Network.Client
         {
             UIManager.Instance.ShowEntryPanel(true);
             GameManager.Instance.CancelMatchMade(true);
+            GameManager.Instance.SetSceneActionSettings(false);
 
             if (SceneManager.GetActiveScene().name != Utility.EntrySceneName)
             {

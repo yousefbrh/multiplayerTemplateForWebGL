@@ -3,6 +3,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Components;
 using Enums;
+using Managers;
 using Misc;
 using Unity.Netcode;
 using Unity.Netcode.Transports.UTP;
@@ -97,6 +98,7 @@ namespace Network.Client
             var payloadBytes = Encoding.UTF8.GetBytes(payload);
             NetworkManager.Singleton.NetworkConfig.ConnectionData = payloadBytes;
             NetworkManager.Singleton.StartClient();
+            GameManager.Instance.SetSceneActionSettings(true);
         }
         
         public void Dispose()

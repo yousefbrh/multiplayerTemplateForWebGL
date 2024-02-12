@@ -23,6 +23,8 @@ namespace Misc
         public const string EntrySceneName = "Entry";
         public static readonly int AddHashKey = Animator.StringToHash("Add");
         public static readonly int RemoveHashKey = Animator.StringToHash("Remove");
+        public const string HorizontalKey = "Horizontal";
+        public const string VerticalKey = "Vertical";
 
         public static IEnumerator CheckReachability(Action<bool> action)
         {
