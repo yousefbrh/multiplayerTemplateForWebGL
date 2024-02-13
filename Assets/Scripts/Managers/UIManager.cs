@@ -23,6 +23,7 @@ namespace Managers
         [SerializeField] private Button skinButton;
         [SerializeField] private NetworkMessagePanel networkMessagePanel;
         [SerializeField] private CounterContainer counterContainer;
+        [SerializeField] private GameChat gameChatPanel;
         #endregion
 
         #region Private
@@ -175,6 +176,11 @@ namespace Managers
         public void AddCoinWithoutEffect(int value)
         {
             counterContainer.AddWithoutEffect(value);
+        }
+
+        public void ShowChatPanel(bool isActive)
+        {
+            gameChatPanel.gameObject.SetActive(isActive);
         }
     }
 }

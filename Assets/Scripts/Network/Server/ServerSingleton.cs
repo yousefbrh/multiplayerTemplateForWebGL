@@ -89,6 +89,7 @@ namespace Network.Server
                     await LobbyManager.Instance.CreateLobby(joinCode, _allocationId);
                     Debug.Log("network server");
                     NetworkManager.Singleton.StartServer();
+                    GameManager.Instance.SetSceneActionSettings(true);
                     StartCoroutine(Utility.LoadScene("Main", 0.5f));
                 }
                 catch (Exception ex)

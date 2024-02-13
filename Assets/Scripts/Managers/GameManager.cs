@@ -146,6 +146,8 @@ namespace Managers
         private void SceneManagerOnOnLoadComplete(ulong clientId, string sceneName, LoadSceneMode loadSceneMode)
         {
             UIManager.Instance.ShowEntryPanel(false);
+            UIManager.Instance.ShowChatPanel(true);
+            LevelManager.Instance.PrepareLevel();
         }
     }
 }

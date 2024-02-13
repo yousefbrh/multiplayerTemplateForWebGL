@@ -87,6 +87,7 @@ namespace Network.Server
 
         public void Dispose()
         {
+            GameManager.Instance.SetSceneActionSettings(false);
             if (_networkManager == null) return;
             _networkManager.ConnectionApprovalCallback -= ApprovalCheck;
             _networkManager.OnClientDisconnectCallback -= OnClientDisconnect;
