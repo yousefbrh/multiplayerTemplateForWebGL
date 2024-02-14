@@ -27,6 +27,7 @@ namespace Entities
             if (IsOwner)
             {
                 GameChat.Instance.PlayerInit(this);
+                move.CanMove(true);
             }
         }
         

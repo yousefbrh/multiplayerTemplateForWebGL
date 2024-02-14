@@ -30,8 +30,8 @@ namespace Components
         private void CharacterMovement()
         {
             if (!_canMove) return;
-            _horizontal = DynamicJoystick.instance.Horizontal; 
-            _vertical = DynamicJoystick.instance.Vertical;
+            _horizontal = DynamicJoystick.Instance.Horizontal; 
+            _vertical = DynamicJoystick.Instance.Vertical;
             var gravity = Vector3.zero;
             if (!_characterController.isGrounded) gravity = Physics.gravity;
             if (_horizontal == 0) _horizontal = Input.GetAxis(Utility.HorizontalKey);

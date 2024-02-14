@@ -5,12 +5,23 @@ using UnityEngine.EventSystems;
 
 public class DynamicJoystick : Joystick
 {
-    public static DynamicJoystick instance;
+    public static DynamicJoystick Instance;
     public float MoveThreshold { get { return moveThreshold; } set { moveThreshold = Mathf.Abs(value); } }
 
     [SerializeField] private float moveThreshold = 1;
 
-    private void Awake() => instance = this;
+    private void Awake()
+    {
+        if (Instance)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
 
     protected override void Start()
     {
