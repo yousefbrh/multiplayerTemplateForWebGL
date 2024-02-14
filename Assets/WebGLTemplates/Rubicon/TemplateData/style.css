@@ -1,0 +1,33 @@
+body { padding: 0; margin: 0 }
+#game-container { position: absolute }
+/* #game-container.game-desktop { left: 50%; top: 50%; transform: translate(-50%, -50%) } */
+#game-container.unity-mobile { width: 100%; height: 100% }
+.unity-mobile #game-canvas { width: 100%; height: 100% }
+#loading-view { position: absolute; left: 50%; top: 45%; transform: translate(-50%, -50%);}
+#game-logo { width: 120px; height: 120px; margin-left: auto; margin-right: auto; background: url('rubicon-logo.svg') no-repeat center }
+#loading-game-name { text-align: center; font-family: 'Roboto', sans-serif; font-weight: bolder;}
+
+.progress {
+    background: rgba(37, 50, 84, 0.75);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 19px;
+    width: 500px;
+}
+
+.loading-progress-bar {
+    border-radius: 100px;
+    margin: 2px;
+    background: linear-gradient(90deg, #2AF228 15%, #00E590 43%, #00D2C9 50%, #00BADB 85%, #4DC6FF 100%) fixed;
+    height: 15px;
+    width: 0%;
+}
+
+@media only screen and (max-width: 600px) {
+  .progress {
+    width: 300px;
+}
+}
