@@ -99,7 +99,7 @@ namespace Managers
             {
                 var joiningLobby = await Lobbies.Instance.JoinLobbyByIdAsync(lobby.Id);
                 var joinCode = joiningLobby.Data["joinCode"].Value;
-                await ClientSingleton.Instance.StartClientAsync(joinCode);
+                await ClientSingleton.Instance.StartClientAsync(joinCode, callback);
                 callback?.Invoke(true);
                 return true;
             }
@@ -209,7 +209,7 @@ namespace Managers
                     {
                         Player = newPlayer
                     });
-                    await ClientSingleton.Instance.StartClientAsync(_currentLobby.Data["joinCode"].Value);
+                    await ClientSingleton.Instance.StartClientAsync(_currentLobby.Data["joinCode"].Value, callback);
                     await UniTask.Delay(2800);
                     isSuccessful = true;
                     break;

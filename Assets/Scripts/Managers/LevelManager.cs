@@ -22,13 +22,13 @@ namespace Managers
                 Destroy(gameObject);
                 return;
             }
-            
-            levelNumber.OnValueChanged += ClientDesign;
         }
 
-        private void ClientDesign(int previousvalue, int newvalue)
+        public override void OnNetworkSpawn()
         {
-            if (!IsServer)
+            if (IsServer)
+                ServerDesign();
+            else
                 ClientDesign();
         }
 
@@ -45,7 +45,7 @@ namespace Managers
             var resourceRequest = Resources.LoadAsync($"Prefabs/Levels/Level {_currentPrefabSuffix}", typeof(GameObject));
             resourceRequest.completed += operation =>
             {
-                Instantiate(resourceRequest.asset as GameObject, transform);
+                Instantiate(resourceRequest.asset as GameObject);
                 levelNumber.Value = _currentPrefabSuffix;
             };
         }
@@ -55,7 +55,7 @@ namespace Managers
             var resourceRequest = Resources.LoadAsync($"Prefabs/Levels/Level {levelNumber.Value}", typeof(GameObject));
             resourceRequest.completed += operation =>
             {
-                Instantiate(resourceRequest.asset as GameObject, transform);
+                Instantiate(resourceRequest.asset as GameObject);
             };
         }
     }

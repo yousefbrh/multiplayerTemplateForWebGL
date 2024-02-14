@@ -1,3 +1,4 @@
+using Components;
 using UI;
 using Unity.Collections;
 using Unity.Netcode;
@@ -7,6 +8,7 @@ namespace Entities
 {
     public class Player : NetworkBehaviour
     {
+        [SerializeField] private Move move;
         private bool _isChatting;
 
         public NetworkVariable<int> ServerId = new NetworkVariable<int>();
@@ -15,6 +17,7 @@ namespace Entities
         public void IsChatting(bool isActive)
         {
             _isChatting = isActive;
+            move.CanMove(!_isChatting);
         }
         
         public override void OnNetworkSpawn()

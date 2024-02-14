@@ -73,7 +73,7 @@ namespace Network.Client
             ConnectClient();
         }
 
-        public async Task StartClientAsync(string joinCode)
+        public async Task StartClientAsync(string joinCode, Action<bool> callback)
         {
             try
             {
@@ -82,6 +82,7 @@ namespace Network.Client
             catch (Exception e)
             {
                 Debug.Log(e);
+                callback?.Invoke(false);
                 return;
             }
             var transport = NetworkManager.Singleton.GetComponent<UnityTransport>();

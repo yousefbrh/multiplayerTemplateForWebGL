@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
 using Enums;
 using Managers;
+using Network.Client;
 using Unity.Netcode;
 using Unity.Services.Authentication;
 using Unity.Services.Core;
@@ -50,6 +51,11 @@ namespace Misc
         {
             yield return new WaitForSeconds(delay);
             NetworkManager.Singleton.SceneManager.LoadScene(sceneName, loadSceneMode);
+        }
+        
+        public static void Leave()
+        {
+            ClientSingleton.Instance.Disconnect();
         }
     }
 }

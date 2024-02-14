@@ -854,6 +854,7 @@ MonoBehaviour:
   _mainText: {fileID: 4289975396621134485}
   phoneImageButton: {fileID: 9127483580456353851}
   panelRectTransform: {fileID: 5229042760620367581}
+  content: {fileID: 4704741125839555550}
   phoneLimit: 199
   pcLimit: 597
   messageLimit: 185

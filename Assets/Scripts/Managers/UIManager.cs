@@ -24,6 +24,7 @@ namespace Managers
         [SerializeField] private NetworkMessagePanel networkMessagePanel;
         [SerializeField] private CounterContainer counterContainer;
         [SerializeField] private GameChat gameChatPanel;
+        [SerializeField] private LeavePanel leavePanel;
         #endregion
 
         #region Private
@@ -178,9 +179,23 @@ namespace Managers
             counterContainer.AddWithoutEffect(value);
         }
 
-        public void ShowChatPanel(bool isActive)
+        private void ShowChatPanel(bool isActive)
         {
-            gameChatPanel.gameObject.SetActive(isActive);
+            gameChatPanel.Active(isActive);
+        }
+
+        private void ShowLeavePanel(bool isActive)
+        {
+            if (isActive)
+                leavePanel.Show();
+            else
+                leavePanel.Hide();
+        }
+
+        public void ShowMainPanel(bool isActive)
+        {
+            ShowChatPanel(isActive);
+            ShowLeavePanel(isActive);
         }
     }
 }

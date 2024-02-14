@@ -36,7 +36,7 @@ namespace Network.Client
         public void Disconnect()
         {
             UIManager.Instance.ShowEntryPanel(true);
-            UIManager.Instance.ShowChatPanel(false);
+            UIManager.Instance.ShowMainPanel(false);
             GameManager.Instance.CancelMatchMade(true);
             GameManager.Instance.SetSceneActionSettings(false);
 

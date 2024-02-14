@@ -13,6 +13,7 @@ namespace Components
         private CharacterController _characterController;
         private Transform _playerTransform;
         private float _speed;
+        private bool _canMove;
 
         private void Awake()
         {
@@ -28,6 +29,7 @@ namespace Components
 
         private void CharacterMovement()
         {
+            if (!_canMove) return;
             _horizontal = DynamicJoystick.instance.Horizontal; 
             _vertical = DynamicJoystick.instance.Vertical;
             var gravity = Vector3.zero;
@@ -45,6 +47,11 @@ namespace Components
             Vector3 movement = _playerTransform.forward * Time.deltaTime * _speed;
             movement += gravity;
             _characterController.Move(movement);
+        }
+
+        public void CanMove(bool isAble)
+        {
+            _canMove = isAble;
         }
     }
 }

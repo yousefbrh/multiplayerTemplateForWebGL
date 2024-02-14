@@ -1,21 +1,16 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using Components;
-using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using Entities;
-using Managers;
-using Network;
-using Rubicon.Ads;
 using TMPro;
 using Unity.Netcode;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
+
 namespace UI
 { 
     public class GameChat : NetworkBehaviour
@@ -26,6 +21,7 @@ namespace UI
         [SerializeField] private TMP_Text _mainText;
         [SerializeField] private Button phoneImageButton;
         [SerializeField] private RectTransform panelRectTransform;
+        [SerializeField] private GameObject content;
         [SerializeField] private int phoneLimit;
         [SerializeField] private int pcLimit;
         [SerializeField] private int messageLimit;
@@ -35,7 +31,6 @@ namespace UI
 
         [SerializeField] private TMP_Text _disableText;
         private List<Message> _messages = new List<Message>();
-        // private LimitedQueue<Message> _messageHistory = new LimitedQueue<Message>(5);
         private string playerNick;
         private Coroutine _alphaTimer;
         private Player _player;
@@ -65,7 +60,8 @@ namespace UI
         
         private void Start()
         {
-            Init();
+            if (!IsServer)
+                Init();
         }
 
         private void Update()
@@ -85,6 +81,11 @@ namespace UI
                     ClientSend();
                 }
             }
+        }
+
+        public void Active(bool isActive)
+        {
+            content.SetActive(isActive);
         }
 
         public void PlayerInit(Player player)
